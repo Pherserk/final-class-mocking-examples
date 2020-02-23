@@ -64,4 +64,4 @@ conditional_install_docker_ce_runtime
 
 conditional_install_docker_compose
 
-(cd "${PROVISIONING_PATH}" && docker-compose build && docker-compose run --rm --name=test-finals-mock php-cli bash -c 'composer install;vendor/bin/phpunit -c .')
+(cd "${PROVISIONING_PATH}" && docker-compose build && docker-compose run --rm --name=final-class-mocking-example-test-runner php-cli bash -c 'composer install;vendor/bin/phpunit -c .')

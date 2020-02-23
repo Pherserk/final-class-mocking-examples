@@ -1,6 +1,7 @@
 version: '3.7'
 services:
   php-cli:
+    container_name: ${PROJECT_NAME}-${PHP_CLI_SERVICE_NAME}
     build:
       context: ${PROVISIONING_PATH}/${PHP_CLI_SERVICE_NAME}
     volumes:
