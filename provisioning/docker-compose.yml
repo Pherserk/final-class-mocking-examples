@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+  php-cli:
+    build:
+      context: ${PROVISIONING_PATH}/${PHP_CLI_SERVICE_NAME}
+    volumes:
+      - ${CODE_PATH}:/var/code
+
